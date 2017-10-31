@@ -1,0 +1,24 @@
+{
+
+  "manifest_version": 2,
+  "name": "Samlib tools WE",
+  "version": "0.1",
+  "description": "Расширение, для скачивания произведений с Самиздата в fb2, epub, mobi. Используется сторонний сайт писателя Тищенко В. А. Иконки взяты из оригинального дополнения с разрешения автора.",
+  "homepage_url": "http://vagrand.point.od.ua/",
+  "icons": {
+      "16": "images/icon_16.png",
+      "48": "images/icon_48.png",
+      "128": "images/icon_128.png"
+  },
+  "content_scripts": [
+      {
+          "matches": [ "http://samlib.ru/*", "http://budclub.ru/*", "http://zhurnal.lib.ru/*" ],
+          "js": ["samlib.js"],
+          "run_at": "document_end"
+      }
+  ],
+  "web_accessible_resources": [
+      "images/download.png"
+  ]
+
+} 
