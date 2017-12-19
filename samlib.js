@@ -42,7 +42,7 @@ function samtools_add_buttons(item)
                             var b = lis[index].children[i].textContent;
                             lis[index].firstElementChild.insertAdjacentHTML('afterbegin', '<a href="'+url+'='+anchor+'" title="Скачать произведение" target="_blank"><img src="'+chrome.extension.getURL('images/download.png')+'" border="0" style="vertical-align: middle;"></a>&nbsp;');
                             if (item.state){
-                                lis[index].lastElementChild.insertAdjacentHTML('beforeEnd', add_social_button(b , anchor));
+                                lis[index].lastElementChild.insertAdjacentHTML('afterEnd', add_social_button(b , anchor));
                             };
                         };
                     };
